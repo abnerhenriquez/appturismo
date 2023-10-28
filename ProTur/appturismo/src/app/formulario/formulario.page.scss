@@ -1,0 +1,95 @@
+/* Estilo para el ion-list */
+ion-list {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilo para los ion-item */
+  ion-item {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para el ion-input */
+  ion-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilo para el label del ion-input */
+  ion-input div[slot="label"] {
+    color: #333;
+    font-size: 14px;
+  }
+  
+  /* Estilo para el ion-select */
+  ion-select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilo para el ion-select-option */
+  ion-select-option {
+    font-size: 16px;
+  }
+  
+  /* Estilo para el ion-radio-group */
+  ion-radio-group {
+    width: 100%;
+  }
+  
+  /* Estilo para el ion-radio */
+  ion-radio {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  /* Estilo para el ion-text con color de peligro (rojo) */
+  ion-text[color="danger"] {
+    color: rgb(248, 4, 4);
+  }
+  
+  /* Color de fondo para los campos requeridos */
+  ion-input[required], ion-select[required] {
+    background-color: #ffffff; /* Rojo claro */
+  }
+  
+  /* Color de fondo para el ion-radio-group requerido */
+  ion-radio-group[required] {
+    background-color: #ffe6e6; /* Rojo claro */
+  }
+  
+  /* Color de fondo para los elementos seleccionados en ion-radio-group */
+  ion-radio:checked {
+    background-color: #c5ddf6; /* Azul */
+    color: white;
+  }
+
+  /* Estilo personalizado para ion-radio */
+ion-radio {
+    --border-radius: 4px;
+    --inner-border-radius: 4px;
+    --color: #ddd;
+    --color-checked: #6815ec;
+    --radio-background-color-checked: #6815ec; /* Nuevo color de fondo cuando está seleccionado */
+  }
+  
+  /* Estilo personalizado para el contenedor de ion-radio en iOS */
+  ion-radio.ios::part(container) {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: var(--border-radius); /* Utilizando la variable --border-radius */
+  }
+  
+  /* Estilo para el contenedor de ion-radio cuando está marcado en iOS */
+  .radio-checked.ios::part(container) {
+    border-color: var(--radio-background-color-checked); /* Utilizando la variable --radio-background-color-checked */
+  }
+  

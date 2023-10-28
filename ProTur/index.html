@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html long="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Registro</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <div class="Container">
+    <form action="controller/controlador.php" method="POST" class="form" id="form">
+      <input type="hidden" name="op" value="1">
+
+      <p class="form-titulo">Inicio Sesión</p>
+      <div class="form-input ">
+        <input type="text" id="usuario" name="usuario" required="">
+        <label>Nombre de Usuario</label>
+      </div>
+
+      <div class="form-input ">
+        <input type="password" id="clave" name="clave" required="">
+        <label>Contraseña</label>
+      </div>
+
+
+      <button type="submit">
+        Ingresar
+      </button>
+      
+    </form>
+  </div>
+
+  <!-- <script src="js/form.js"></script> -->
+
+
+
+</body>
+
+</html>
